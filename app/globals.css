@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Archivo', sans-serif;
+}
+
+.gradient-overlay {
+  background: #212121;
+  mix-blend-mode: multiply;
+}
+
+.gradient-overlay-bg {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.68) 0%,
+      rgba(0, 0, 0, 0.68) 100%
+    ),
+    url("/assets/bg-remote-web.jpeg"), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.bg-image {
+  background: url("/assets/bg-gradient-image.png") center center/cover no-repeat;
+}
+
+.header-gradient-bg {
+  border: 0.4px solid #08134a;
+  background: linear-gradient(
+    107deg,
+    rgba(0, 0, 0, 0.36) 72.1%,
+    rgba(0, 0, 0, 0) 106.44%
+  );
+
+  /* nav */
+  backdrop-filter: blur(70px);
+}
+
+.glass-bg-card {
+  border-radius: 8px;
+  background: rgba(89, 100, 176, 0.20);
+}
+
+.mobile-menu-bg {
+  background: linear-gradient(107deg, rgba(0, 0, 0, 0.36) 72.1%, rgba(0, 0, 0, 0.00) 106.44%);
+} 
